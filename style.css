@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.body {
+  background: url("SNAKEE.jpg");
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#highScoreBox {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  top: 60px;
+  right: 200px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+#scoreBox {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  top: 25px;
+  right: 250px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+#board {
+  background: linear-gradient(rgb(178, 237, 178), rgb(121, 174, 221));
+  width: 90vmin;
+  height: 92vmin;
+  border: 2px solid rgb(42, 42, 42);
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+  background-color: rgb(239, 155, 0);
+  border: 0.25vmin rgb(22, 44, 41);
+  border-radius: 7.5px;
+  transform: scale(1.02);
+}
+.snake {
+  background: linear-gradient(yellow, orange);
+  border: 0.25vmin white;
+  border-radius: 13px;
+}
+
+.food {
+  background: linear-gradient(darkred, rgb(153, 15, 15));
+  border: 0.25vmin black;
+  border-radius: 9px;
+}
